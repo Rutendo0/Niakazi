@@ -13,25 +13,51 @@ import AboutSection from "@/components/about-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import PageTransition from "@/components/page-transition";
+import AnimatedSection from "@/components/animated-section";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <PageTransition className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <KeyFeaturesSection />
-      <ServicesSection />
-      <ConnectivitySection />
-      <CloudServicesSection />
-      <SecuritySection />
-      <HardwareSoftwareSection />
-      <TrainingSection />
-      <ValueAddedServicesSection />
-      <IndustriesSection />
-      <AboutSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <AnimatedSection delay={0.2}>
+        <KeyFeaturesSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.3}>
+        <ServicesSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <ConnectivitySection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <CloudServicesSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <SecuritySection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <HardwareSoftwareSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <TrainingSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <ValueAddedServicesSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <IndustriesSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <AboutSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <TestimonialsSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <ContactSection />
+      </AnimatedSection>
       <Footer />
-    </div>
+    </PageTransition>
   );
 }

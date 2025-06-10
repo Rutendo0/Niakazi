@@ -19,20 +19,27 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Elegant gradient background */}
-      <div className="absolute inset-0 elegant-gradient"></div>
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden hero-gradient">
+      {/* Enhanced atmospheric background */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-600/20 to-transparent rounded-full blur-3xl floating-animation"></div>
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-br from-purple-600/20 to-transparent rounded-full blur-3xl floating-animation" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-1/2 left-0 w-64 h-64 bg-gradient-to-br from-cyan-500/15 to-transparent rounded-full blur-2xl floating-animation" style={{animationDelay: '1.5s'}}></div>
+      </div>
       
-      {/* Floating geometric shapes for visual interest */}
+      {/* Enhanced floating elements */}
       <FloatingElement delay={0} duration={6} className="absolute top-20 left-10">
-        <div className="w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
+        <div className="w-32 h-32 bg-gradient-to-br from-blue-400/30 to-purple-400/30 rounded-full blur-xl"></div>
       </FloatingElement>
       <PulsingElement delay={1} className="absolute top-40 right-20">
-        <div className="w-32 h-32 bg-blue-400/20 rounded-full blur-2xl"></div>
+        <div className="w-40 h-40 bg-gradient-to-br from-purple-400/25 to-pink-400/25 rounded-full blur-2xl pulse-glow"></div>
       </PulsingElement>
       <FloatingElement delay={2} duration={8} className="absolute bottom-20 left-1/4">
-        <div className="w-16 h-16 bg-yellow-300/20 rounded-full blur-lg"></div>
+        <div className="w-24 h-24 bg-gradient-to-br from-cyan-400/25 to-blue-400/25 rounded-full blur-lg"></div>
       </FloatingElement>
+      <PulsingElement delay={0.5} className="absolute top-60 right-1/3">
+        <div className="w-20 h-20 bg-gradient-to-br from-indigo-400/30 to-purple-400/30 rounded-full blur-md"></div>
+      </PulsingElement>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -56,32 +63,34 @@ export default function HeroSection() {
             {/* Main heading */}
             <div className="space-y-6">
               <motion.h1 
-                className="text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight"
+                className="text-6xl md:text-8xl font-bold text-white leading-tight tracking-tight"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
                 <motion.span
+                  className="block"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                  Unlock
+                  Transform Your
                 </motion.span>
                 <motion.span 
-                  className="block text-transparent bg-gradient-to-r from-yellow-300 to-white bg-clip-text"
+                  className="block text-transparent bg-gradient-to-r from-cyan-200 via-blue-200 to-purple-200 bg-clip-text shimmer-effect"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, delay: 0.7 }}
                 >
-                  Reliable & Secure
+                  Digital Future
                 </motion.span>
                 <motion.span
+                  className="block text-white/90 font-light text-5xl md:text-6xl"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.9 }}
                 >
-                  Connectivity
+                  with Innovation
                 </motion.span>
               </motion.h1>
               
@@ -128,27 +137,33 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 1.5 }}
             >
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.3 }}
               >
                 <Button 
                   onClick={() => scrollToSection('contact')}
-                  className="group bg-white text-gray-900 px-8 py-4 text-lg font-semibold hover:bg-yellow-300 hover:text-gray-900 h-auto rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl"
+                  className="premium-button text-lg px-10 py-5 pulse-glow group"
                 >
                   Start Your Project
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <motion.div
+                    className="ml-2"
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                  >
+                    <ArrowRight className="w-5 h-5" />
+                  </motion.div>
                 </Button>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.3 }}
               >
                 <Button 
                   onClick={() => scrollToSection('services')}
                   variant="outline"
-                  className="border-2 border-white/30 text-white px-8 py-4 text-lg font-semibold hover:bg-white/10 hover:border-white h-auto rounded-xl backdrop-blur-sm transition-all duration-300"
+                  className="glass-effect border-white/30 text-white px-8 py-5 text-lg font-semibold hover:bg-white/10 hover:text-white h-auto rounded-2xl transition-all duration-300"
                 >
                   Explore Services
                 </Button>

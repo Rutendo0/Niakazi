@@ -47,11 +47,32 @@ export default function Navigation() {
             >
               Home
             </button>
+            <div className="relative group">
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="text-gray-700 hover:text-primary transition-colors flex items-center"
+              >
+                Solutions
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  <button onClick={() => scrollToSection('connectivity')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Connectivity</button>
+                  <button onClick={() => scrollToSection('cloud')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Cloud Services</button>
+                  <button onClick={() => scrollToSection('security')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Security</button>
+                  <button onClick={() => scrollToSection('hardware')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Hardware & Software</button>
+                  <button onClick={() => scrollToSection('training')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Training</button>
+                  <button onClick={() => scrollToSection('value-services')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Value Added Services</button>
+                </div>
+              </div>
+            </div>
             <button 
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection('industries')}
               className="text-gray-700 hover:text-primary transition-colors"
             >
-              Services
+              Industries
             </button>
             <button 
               onClick={() => scrollToSection('about')}

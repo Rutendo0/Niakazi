@@ -84,48 +84,28 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-      {/* Background decorative elements */}
-      <motion.div 
-        className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full -translate-x-48 -translate-y-48 opacity-20"
-        animate={{ 
-          scale: [1, 1.1, 1],
-          rotate: [0, 10, 0]
-        }}
-        transition={{ 
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      ></motion.div>
-      <motion.div 
-        className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 rounded-full translate-x-48 translate-y-48 opacity-20"
-        animate={{ 
-          scale: [1, 1.2, 1],
-          rotate: [0, -15, 0]
-        }}
-        transition={{ 
-          duration: 12,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2
-        }}
-      ></motion.div>
+    <section id="services" className="py-32 bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30 relative overflow-hidden">
+      {/* Enhanced background elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full blur-3xl floating-animation"></div>
+        <div className="absolute bottom-40 left-10 w-80 h-80 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full blur-3xl floating-animation" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full blur-2xl floating-animation" style={{animationDelay: '1s'}}></div>
+      </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedSection className="text-center mb-20">
+        <AnimatedSection className="text-center mb-24">
           <motion.div 
-            className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full text-blue-700 text-sm font-medium mb-6"
+            className="inline-flex items-center gap-2 sophisticated-card bg-gradient-to-r from-blue-50 to-purple-50 px-6 py-3 rounded-full text-blue-700 text-sm font-medium mb-8"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
             <Zap className="w-4 h-4" />
             Enterprise Solutions
           </motion.div>
           <motion.h2 
-            className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+            className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -133,7 +113,7 @@ export default function ServicesSection() {
           >
             Transform Your Business with
             <motion.span 
-              className="block text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text"
+              className="block text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text shimmer-effect"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -143,7 +123,7 @@ export default function ServicesSection() {
             </motion.span>
           </motion.h2>
           <motion.p 
-            className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}

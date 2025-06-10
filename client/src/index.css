@@ -140,7 +140,7 @@
   }
   
   .interactive-card {
-    @apply sophisticated-card elegant-hover cursor-pointer group overflow-hidden relative;
+    @apply sophisticated-card elegant-hover cursor-pointer overflow-hidden relative;
   }
   
   .interactive-card::before {

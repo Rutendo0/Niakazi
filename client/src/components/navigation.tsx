@@ -109,7 +109,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-white border-t shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <button 
               onClick={() => scrollToSection('home')}
@@ -117,11 +117,50 @@ export default function Navigation() {
             >
               Home
             </button>
+            <div className="border-b border-gray-100 my-2"></div>
+            <div className="text-xs font-semibold text-gray-500 px-3 py-1 uppercase tracking-wide">Solutions</div>
             <button 
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection('connectivity')}
+              className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary text-sm"
+            >
+              Connectivity
+            </button>
+            <button 
+              onClick={() => scrollToSection('cloud')}
+              className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary text-sm"
+            >
+              Cloud Services
+            </button>
+            <button 
+              onClick={() => scrollToSection('security')}
+              className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary text-sm"
+            >
+              Security
+            </button>
+            <button 
+              onClick={() => scrollToSection('hardware')}
+              className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary text-sm"
+            >
+              Hardware & Software
+            </button>
+            <button 
+              onClick={() => scrollToSection('training')}
+              className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary text-sm"
+            >
+              Training
+            </button>
+            <button 
+              onClick={() => scrollToSection('value-services')}
+              className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary text-sm"
+            >
+              Value Added Services
+            </button>
+            <div className="border-b border-gray-100 my-2"></div>
+            <button 
+              onClick={() => scrollToSection('industries')}
               className="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary"
             >
-              Services
+              Industries
             </button>
             <button 
               onClick={() => scrollToSection('about')}
@@ -135,12 +174,14 @@ export default function Navigation() {
             >
               Contact
             </button>
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="w-full bg-primary text-white hover:bg-blue-700"
-            >
-              Get Quote
-            </Button>
+            <div className="px-3 pt-3">
+              <Button 
+                onClick={() => scrollToSection('contact')}
+                className="w-full bg-primary text-white hover:bg-blue-700"
+              >
+                Get Quote
+              </Button>
+            </div>
           </div>
         </div>
       )}

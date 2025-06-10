@@ -24,12 +24,14 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4">Solutions</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Cloud Solutions</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Cybersecurity</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">IT Support</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Data Management</a></li>
+              <li><a href="#connectivity" className="hover:text-white transition-colors">Connectivity</a></li>
+              <li><a href="#cloud" className="hover:text-white transition-colors">Cloud Services</a></li>
+              <li><a href="#security" className="hover:text-white transition-colors">Security</a></li>
+              <li><a href="#hardware" className="hover:text-white transition-colors">Hardware & Software</a></li>
+              <li><a href="#training" className="hover:text-white transition-colors">Training</a></li>
+              <li><a href="#value-services" className="hover:text-white transition-colors">Value Added Services</a></li>
             </ul>
           </div>
           

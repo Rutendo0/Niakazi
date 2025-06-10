@@ -163,12 +163,22 @@ export default function ContactSection() {
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="cloud-solutions">Cloud Solutions</SelectItem>
-                      <SelectItem value="cybersecurity">Cybersecurity</SelectItem>
-                      <SelectItem value="it-support">IT Support</SelectItem>
-                      <SelectItem value="data-management">Data Management</SelectItem>
-                      <SelectItem value="network-infrastructure">Network Infrastructure</SelectItem>
-                      <SelectItem value="digital-transformation">Digital Transformation</SelectItem>
+                      <SelectItem value="connectivity">Connectivity Solutions</SelectItem>
+                      <SelectItem value="dedicated-internet">Dedicated Internet Access</SelectItem>
+                      <SelectItem value="fiber">Fiber Connectivity</SelectItem>
+                      <SelectItem value="sdwan">SD-WAN Solutions</SelectItem>
+                      <SelectItem value="vsat">VSAT Services</SelectItem>
+                      <SelectItem value="cloud-services">Cloud Services</SelectItem>
+                      <SelectItem value="microsoft-azure">Microsoft Azure</SelectItem>
+                      <SelectItem value="microsoft-365">Microsoft 365</SelectItem>
+                      <SelectItem value="oracle-cloud">Oracle Cloud Infrastructure</SelectItem>
+                      <SelectItem value="security">Security Solutions</SelectItem>
+                      <SelectItem value="penetration-testing">Vulnerability Assessment & Penetration Testing</SelectItem>
+                      <SelectItem value="endpoint-security">Endpoint Security</SelectItem>
+                      <SelectItem value="hardware-software">Hardware & Software</SelectItem>
+                      <SelectItem value="training">Training & Development</SelectItem>
+                      <SelectItem value="managed-services">Managed Services</SelectItem>
+                      <SelectItem value="consulting">IT Consulting</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

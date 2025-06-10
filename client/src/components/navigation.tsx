@@ -115,7 +115,7 @@ export default function Navigation() {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
             >
-              <Link href="/contact">
+              <Link href="/get-quote">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 px-6 py-2 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                   Get Quote
                 </Button>
@@ -213,7 +213,7 @@ export default function Navigation() {
                 Contact
               </Link>
               <div className="px-3 pt-3">
-                <Link href="/contact" onClick={closeMenu}>
+                <Link href="/get-quote" onClick={closeMenu}>
                   <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 rounded-xl transition-all duration-300">
                     Get Quote
                   </Button>

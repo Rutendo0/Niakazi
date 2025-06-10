@@ -3,34 +3,34 @@ import { Cloud, Shield, Settings, Database, Network, Smartphone } from "lucide-r
 
 const services = [
   {
+    icon: Network,
+    title: "Connectivity",
+    description: "Reliable internet access, fiber connectivity, SD-WAN, and VSAT solutions for seamless business operations."
+  },
+  {
     icon: Cloud,
-    title: "Cloud Solutions",
-    description: "Scalable cloud infrastructure and migration services to modernize your business operations."
+    title: "Cloud Services",
+    description: "Microsoft Azure, Office 365, Oracle Cloud, VPS, and co-location services for scalable infrastructure."
   },
   {
     icon: Shield,
-    title: "Cybersecurity",
-    description: "Comprehensive security solutions to protect your business from cyber threats and data breaches."
-  },
-  {
-    icon: Settings,
-    title: "IT Support",
-    description: "24/7 technical support and maintenance to keep your systems running smoothly."
+    title: "Security",
+    description: "Comprehensive cybersecurity including vulnerability testing, endpoint security, and 24/7 monitoring."
   },
   {
     icon: Database,
-    title: "Data Management",
-    description: "Advanced data analytics and database management solutions for informed decision-making."
+    title: "Hardware & Software",
+    description: "Enterprise-grade hardware procurement, software licensing, and complete system integration services."
   },
   {
-    icon: Network,
-    title: "Network Infrastructure",
-    description: "Design and implementation of robust network infrastructure for optimal connectivity."
+    icon: Settings,
+    title: "Training & Managed Services",
+    description: "Professional IT training, certification programs, and complete managed service solutions."
   },
   {
     icon: Smartphone,
-    title: "Digital Transformation",
-    description: "Strategic technology adoption to modernize business processes and improve efficiency."
+    title: "Value Added Services",
+    description: "IT consulting, system integration, technical support, and strategic technology advisory services."
   }
 ];
 

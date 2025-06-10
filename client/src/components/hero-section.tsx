@@ -21,10 +21,10 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Professional IT Solutions for Your Business
+              Unlock Reliable and Secure Connectivity for Your Business
             </h1>
             <p className="text-xl mb-8 text-gray-200">
-              Transform your business with cutting-edge technology solutions. We provide comprehensive IT services to help your company thrive in the digital age.
+              Your trusted ICT solutions partner. Count on us for agile and responsive 24/7 customer support, powerful and affordable ICT products and services, and access to ICT specialists with deep expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 

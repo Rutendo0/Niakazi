@@ -38,14 +38,22 @@ export default function AboutSection() {
             <p className="text-lg text-gray-600 mb-8">
               Our team of certified professionals combines deep technical expertise with a thorough understanding of business needs to deliver solutions that drive real results.
             </p>
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <div className="text-3xl font-bold text-primary mb-2">1000+</div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">99%</div>
-                <div className="text-gray-600">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
+                <div className="text-gray-600">Uptime Guarantee</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+                <div className="text-gray-600">Support Available</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                <div className="text-gray-600">Years Experience</div>
               </div>
             </div>
           </div>

@@ -22,9 +22,9 @@ export default function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden hero-gradient">
       {/* Enhanced atmospheric background */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-600/20 to-transparent rounded-full blur-3xl floating-animation"></div>
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-br from-purple-600/20 to-transparent rounded-full blur-3xl floating-animation" style={{animationDelay: '3s'}}></div>
-        <div className="absolute top-1/2 left-0 w-64 h-64 bg-gradient-to-br from-cyan-500/15 to-transparent rounded-full blur-2xl floating-animation" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-transparent rounded-full blur-3xl floating-animation"></div>
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-br from-purple-300/20 to-transparent rounded-full blur-3xl floating-animation" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-1/2 left-0 w-64 h-64 bg-gradient-to-br from-cyan-100/15 to-transparent rounded-full blur-2xl floating-animation" style={{animationDelay: '1.5s'}}></div>
       </div>
       
       {/* Enhanced floating elements */}
@@ -85,7 +85,7 @@ export default function HeroSection() {
                   Digital Future
                 </motion.span>
                 <motion.span
-                  className="block text-white/90 font-light text-5xl md:text-6xl"
+                  className="block text-white font-light text-5xl md:text-6xl"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.9 }}
@@ -95,7 +95,7 @@ export default function HeroSection() {
               </motion.h1>
               
               <motion.p 
-                className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl"
+                className="text-xl md:text-2xl text-white leading-relaxed max-w-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.1 }}
@@ -163,7 +163,7 @@ export default function HeroSection() {
                 <Button 
                   onClick={() => scrollToSection('services')}
                   variant="outline"
-                  className="glass-effect border-white/30 text-white px-8 py-5 text-lg font-semibold hover:bg-white/10 hover:text-white h-auto rounded-2xl transition-all duration-300"
+                  className="glass-effect border-white/10 text-black px-8 py-5 text-lg font-semibold hover:bg-white/10 hover:text-white h-auto rounded-2xl transition-all duration-300"
                 >
                   Explore Services
                 </Button>

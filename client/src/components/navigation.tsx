@@ -23,7 +23,7 @@ export default function Navigation() {
 
   return (
     <motion.nav 
-      className={`${isScrolled ? 'bg-white/95 backdrop-blur-lg shadow-xl' : 'bg-white/90 backdrop-blur-sm'} sticky top-0 z-50 border-b border-gray-200/50`}
+      className={`${isScrolled ? 'glass-effect shadow-2xl border-b border-blue-200/30' : 'bg-white/90 backdrop-blur-sm border-b border-gray-200/30'} sticky top-0 z-50 transition-all duration-500`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
@@ -40,13 +40,13 @@ export default function Navigation() {
                   transition={{ duration: 0.2 }}
                 >
                   <motion.div 
-                    className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center"
-                    whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.5 }}
+                    className="w-8 h-8 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 rounded-xl flex items-center justify-center shadow-lg"
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
                   >
                     <Sparkles className="w-4 h-4 text-white" />
                   </motion.div>
-                  <span className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">Niakazi</span>
+                  <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">Niakazi</span>
                 </motion.div>
               </Link>
             </div>

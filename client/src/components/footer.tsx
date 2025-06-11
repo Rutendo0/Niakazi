@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="text-2xl font-bold mb-4">Niakazi</div>
             <p className="text-gray-400 mb-4">
-              Professional IT solutions that drive business growth and innovation.
+              Leading ICT solutions provider with multiple specialized divisions serving diverse technology needs.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

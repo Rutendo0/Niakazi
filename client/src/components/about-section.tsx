@@ -33,10 +33,10 @@ export default function AboutSection() {
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">About Niakazi</h2>
             <p className="text-lg text-gray-600 mb-6">
-              With over a decade of experience in the IT industry, Niakazi has been at the forefront of technological innovation, helping businesses transform their operations through cutting-edge solutions.
+              Niakazi is a leading provider of ICT solutions, specializing in comprehensive technology services across multiple divisions. We deliver innovative solutions that help organizations modernize their infrastructure and achieve their digital transformation goals.
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              Our team of certified professionals combines deep technical expertise with a thorough understanding of business needs to deliver solutions that drive real results.
+              Our expertise spans cloud services, networking, security, hardware solutions, and professional training, making us your trusted partner for all technology needs.
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               <div>

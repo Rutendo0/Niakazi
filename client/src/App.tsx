@@ -13,7 +13,6 @@ import IndustriesPage from "@/pages/industries";
 import GetQuotePage from "@/pages/get-quote";
 import SecurityPage from "@/pages/security";
 import HardwarePage from "@/pages/hardware";
-import TrainingPage from "@/pages/training";
 import ValueServicesPage from "@/pages/value-services";
 import NotFound from "@/pages/not-found";
 
@@ -26,7 +25,6 @@ function Router() {
         <Route path="/cloud-services" component={CloudServicesPage} />
         <Route path="/security" component={SecurityPage} />
         <Route path="/hardware" component={HardwarePage} />
-        <Route path="/training" component={TrainingPage} />
         <Route path="/value-services" component={ValueServicesPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />

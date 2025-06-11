@@ -6,7 +6,6 @@ import ConnectivitySection from "@/components/connectivity-section";
 import CloudServicesSection from "@/components/cloud-services-section";
 import SecuritySection from "@/components/security-section";
 import HardwareSoftwareSection from "@/components/hardware-software-section";
-import TrainingSection from "@/components/training-section";
 import ValueAddedServicesSection from "@/components/value-added-services-section";
 import IndustriesSection from "@/components/industries-section";
 import AboutSection from "@/components/about-section";
@@ -38,9 +37,6 @@ export default function Home() {
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
         <HardwareSoftwareSection />
-      </AnimatedSection>
-      <AnimatedSection delay={0.1}>
-        <TrainingSection />
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
         <ValueAddedServicesSection />

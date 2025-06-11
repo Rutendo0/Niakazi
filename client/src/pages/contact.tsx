@@ -56,9 +56,9 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Our Office</h3>
                   <p className="text-gray-600">
-                    123 Technology Drive<br />
-                    Innovation Park<br />
-                    City, State 12345
+                    First Str & Union Ave<br />
+                    ZB Center<br />
+                    4th Floor
                   </p>
                 </div>
               </AnimatedSection>
@@ -70,9 +70,8 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Phone</h3>
                   <p className="text-gray-600">
-                    Main: +1 (555) 123-4567<br />
-                    Support: +1 (555) 123-4568<br />
-                    Toll-free: 1-800-NIAKAZI
+                    Main: +263 77 822 4653<br />
+                    Support: +263 78 517 6021<br />
                   </p>
                 </div>
               </AnimatedSection>
@@ -85,8 +84,6 @@ export default function ContactPage() {
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Email</h3>
                   <p className="text-gray-600">
                     General: info@niakazi.com<br />
-                    Sales: sales@niakazi.com<br />
-                    Support: support@niakazi.com
                   </p>
                 </div>
               </AnimatedSection>
@@ -127,7 +124,7 @@ export default function ContactPage() {
                   <div className="text-center">
                     <MapPin className="w-16 h-16 text-gray-600 mx-auto mb-4" />
                     <p className="text-gray-600 text-lg">Interactive Map Coming Soon</p>
-                    <p className="text-gray-500">123 Technology Drive, Innovation Park</p>
+                    <p className="text-gray-500">ZB Center 4th Floor</p>
                   </div>
                 </div>
               </div>

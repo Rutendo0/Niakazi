@@ -176,8 +176,7 @@ export default function ContactSection() {
                       <SelectItem value="penetration-testing">Vulnerability Assessment & Penetration Testing</SelectItem>
                       <SelectItem value="endpoint-security">Endpoint Security</SelectItem>
                       <SelectItem value="hardware-software">Hardware & Software</SelectItem>
-                      <SelectItem value="training">Training & Development</SelectItem>
-                      <SelectItem value="managed-services">Managed Services</SelectItem>
+         <SelectItem value="managed-services">Managed Services</SelectItem>
                       <SelectItem value="consulting">IT Consulting</SelectItem>
                     </SelectContent>
                   </Select>
@@ -219,7 +218,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Address</h4>
-                    <p className="text-gray-300">123 Business District<br />Tech City, TC 12345</p>
+                    <p className="text-gray-300">First Str & Union Ave, Harare<br />ZB Center, 4th Floor</p>
                   </div>
                 </div>
                 
@@ -229,7 +228,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <p className="text-gray-300">+1263 77 822 4653</p>
                   </div>
                 </div>
                 

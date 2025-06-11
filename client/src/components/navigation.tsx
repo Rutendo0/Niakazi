@@ -67,6 +67,13 @@ export default function Navigation() {
             <div className="relative group">
               <span 
                 onClick={() => {
+                  // First navigate to home if not already there
+                  if (window.location.pathname !== '/') {
+                    window.location.href = '/#services';
+                    return;
+                  }
+                  
+                  // Then scroll to services section
                   const element = document.getElementById('services');
                   if (element) {
                     const headerOffset = 80;
@@ -199,6 +206,13 @@ export default function Navigation() {
               <div className="border-b border-gray-100 my-2"></div>
               <button 
                 onClick={() => {
+                  // First navigate to home if not already there
+                  if (window.location.pathname !== '/') {
+                    window.location.href = '/#services';
+                    return;
+                  }
+                  
+                  // Then scroll to services section
                   const element = document.getElementById('services');
                   if (element) {
                     const headerOffset = 80;

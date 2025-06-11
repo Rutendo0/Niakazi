@@ -57,7 +57,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <Sparkles className="w-4 h-4" />
-              Trusted ICT Solutions Partner
+              Niakazi Solutions
             </motion.div>
             
             {/* Main heading */}

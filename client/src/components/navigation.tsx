@@ -65,7 +65,21 @@ export default function Navigation() {
               </Link>
             </motion.div>
             <div className="relative group">
-              <span className="text-gray-700 hover:text-blue-600 transition-all duration-300 flex items-center cursor-pointer font-medium">
+              <span 
+                onClick={() => {
+                  const element = document.getElementById('services');
+                  if (element) {
+                    const headerOffset = 80;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: "smooth"
+                    });
+                  }
+                }}
+                className="text-gray-700 hover:text-blue-600 transition-all duration-300 flex items-center cursor-pointer font-medium"
+              >
                 Solutions
                 <motion.svg 
                   className="ml-1 w-4 h-4" 
@@ -183,7 +197,25 @@ export default function Navigation() {
                 Home
               </Link>
               <div className="border-b border-gray-100 my-2"></div>
-              <div className="text-xs font-semibold text-gray-500 px-3 py-1 uppercase tracking-wide">Solutions</div>
+              <button 
+                onClick={() => {
+                  const element = document.getElementById('services');
+                  if (element) {
+                    const headerOffset = 80;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: "smooth"
+                    });
+                  }
+                  closeMenu();
+                }}
+                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                Solutions Overview
+              </button>
+              <div className="text-xs font-semibold text-gray-500 px-3 py-1 uppercase tracking-wide">Specific Solutions</div>
               <Link href="/connectivity" onClick={closeMenu} className="block w-full text-left px-3 py-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg text-sm transition-all duration-200">
                 Connectivity
               </Link>
